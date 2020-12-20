@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Денежный перевод</string>
+    <string name="amount">Введите сумму платежа</string>
+    <string name="title">Денежный перевод</string>
+    <string name="card">С банковской карты</string>
+    <string name="phone">С мобильного телефона</string>
+    <string name="cash">Наличными по адресу</string>
+    <string name="info">Информация о платеже</string>
+    <string name="btnOK">OK</string>
+
+</resources>
