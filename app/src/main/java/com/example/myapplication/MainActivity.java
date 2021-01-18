@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         BtnOK.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Вы выбрали оплату на сумму " + inputMoney.getText().toString() + " Путём " + mInfo, Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, R.string.choose + inputMoney.getText().toString() + R.string.path + mInfo, Toast.LENGTH_LONG).show();
             }
         });
     }
@@ -60,19 +60,19 @@ public class MainActivity extends AppCompatActivity {
                         resetCheckBoxes();
                         CardBox.setChecked(true);
                         inputInfo.setInputType(InputType.TYPE_CLASS_NUMBER);
-                        mInfo = "Банковского перевода";
+                        mInfo = getString(R.string.card) ;
                         break;
                     case R.id.checkBoxPhone:
                         resetCheckBoxes();
                         PhoneBox.setChecked(true);
                         inputInfo.setInputType(InputType.TYPE_CLASS_PHONE);
-                        mInfo = "Оплаты по телефону";
+                        mInfo = getString(R.string.phone);
                         break;
                     case R.id.checkBoxCash:
                         resetCheckBoxes();
                         CashBox.setChecked(true);
                         inputInfo.setInputType(InputType.TYPE_CLASS_TEXT);
-                        mInfo = "Наличного расчета курьеру";
+                        mInfo = getString(R.string.cash);
                         break;
                     default:
                 }

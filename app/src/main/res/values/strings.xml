@@ -7,5 +7,7 @@
     <string name="cash">Наличными по адресу</string>
     <string name="info">Информация о платеже</string>
     <string name="btnOK">OK</string>
+    <string name="choose">Вы выбрали оплату на сумму </string>
+    <string name="path">Путём</string>
 
 </resources>
